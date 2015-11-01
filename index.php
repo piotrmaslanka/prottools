@@ -29,7 +29,7 @@
     Hydrophobic amino acids: <?php echo proteindb_count_with_property($protein, 'hydrophobic'); ?><br>
     Hydrophilic amino acids: <?php echo proteindb_count_with_property($protein, 'hydrophilic'); ?><br>
 
-    <br><br>
+    <br>
     <table>
         <tr>
             <th>Amino acid (long)</th>
