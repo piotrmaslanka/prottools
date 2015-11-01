@@ -71,6 +71,12 @@
             if (proteindb_is_amino_acid($amino))
                 $mass += $proteindb_proteins[$amino][2];
         }
+
+        // this is combined mass of these amino acids, but they are linked
+         // Subtract water molecules from peptide bonds.
+
+        $mass -= (proteindb_count_amino($protein) - 1) * 18.02;
+
         return $mass;
     }
 
@@ -80,6 +86,16 @@
     function proteindb_is_amino_acid($amino) {
         global $proteindb_proteins;
         return array_key_exists($amino, $proteindb_proteins);
+    }
+
+    /**
+    * Counts the number of amino acids in a given sequence
+    **/
+    function proteindb_count_amino($protein) {
+        $l = 0;
+        for ($i=0; $i<strlen($protein); $i++)
+            if (proteindb_is_amino_acid($protein[$i])) $l++;
+        return $l;
     }
 
 ?>

@@ -19,6 +19,7 @@
 ?>
 
     <hr>
+    Total amino acids: <?php echo proteindb_count_amino($protein); ?><br>
     Mass: <?php echo proteindb_mass($protein); ?> Da<br>
     Aromatic amino acids: <?php echo proteindb_count_with_property($protein, 'aromatic'); ?><br>
     Aliphatic amino acids: <?php echo proteindb_count_with_property($protein, 'aliphatic'); ?><br>
