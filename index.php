@@ -38,7 +38,6 @@
             <th>Properties</th>
     <?php
         foreach (array_keys($proteindb_proteins) as $amino) {
-               if (!proteindb_is_amino_acid($amino)) continue;
                $count = substr_count($protein, $amino);
                if ($count == 0) continue;
             ?><tr>
