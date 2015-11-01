@@ -1,0 +1,7 @@
+prottools is a simple calculator. You pass it an amino acid sequence,
+and it computes amount of each amino acid, molecular mass and amount
+of amino acids with particular properties.
+
+You can use it at http://www.henrietta.com.pl/prot
+
+See COPYING for license.

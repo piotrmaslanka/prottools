@@ -30,10 +30,6 @@
         'Y' => ['Tyrosine', 'Tyr', 181.19124, 5.64, 2.2, 9.21, 'polar']
     );
 
-
-    $proteindb_attributes = array('hydrophobic', 'hydrophilic', 'negative', 'positive',
-                                  'aromatic', 'aliphatic');
-
     /**
     * Decides if given amino acid has property $property. $name is one-character name
     **/
