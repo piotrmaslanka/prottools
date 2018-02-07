@@ -54,4 +54,4 @@
         <a href="https://github.com/piotrmaslanka/prottools" style="color: black;">Prottools v1.0</a>
     </div>
 </body>
-</htm>
+</html>
